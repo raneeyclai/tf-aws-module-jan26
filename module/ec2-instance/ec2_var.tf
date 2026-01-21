@@ -31,3 +31,6 @@ variable "web_sg" {
   type = list
 }
  
+ variable "subnets" {
+  type = list
+}
