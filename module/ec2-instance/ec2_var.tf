@@ -18,9 +18,6 @@ variable "instance_type" {
   }
 }
  
-variable "subnets" {
-    type = list
-}
  
 variable "region_ami_map" {
   type = map(string)
@@ -31,5 +28,6 @@ variable "region_ami_map" {
 }
 
 variable "web_sg" {
+  type = list
 }
  
