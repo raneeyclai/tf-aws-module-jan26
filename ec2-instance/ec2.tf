@@ -8,7 +8,7 @@ resource "aws_instance" "main" {
     subnet_id = var.subnets[count.index]
     vpc_security_group_ids = var.web_sg
     count = var.num_of_vm
-    associate_public_ip_address = false
+    associate_public_ip_address = true
     user_data = var.user_data
    
   tags = {
