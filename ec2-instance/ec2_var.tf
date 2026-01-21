@@ -30,7 +30,7 @@ variable "region_ami_map" {
 variable "web_sg" {
   type = list
 }
- 
+
  variable "subnets" {
   type = list
 }
